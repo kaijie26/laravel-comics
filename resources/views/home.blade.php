@@ -11,6 +11,7 @@
 
     @include('partials.jumbotron')
     @include('components.series-list')
+    @include('partials.dc-link')
 
      
 @endsection

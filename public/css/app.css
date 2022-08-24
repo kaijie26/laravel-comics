@@ -113,3 +113,26 @@ a {
   color: #fff;
   border: none;
 }
+
+.section-dc-link {
+  background-color: #0282f9;
+  padding: 50px 0;
+}
+.section-dc-link .dc-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-dc-link .dc-menu li {
+  display: flex;
+  align-items: center;
+}
+.section-dc-link .dc-menu li img {
+  width: 40px;
+}
+.section-dc-link .dc-menu li a {
+  padding-left: 10px;
+  padding-right: 40px;
+  color: #fff;
+  font-size: 13px;
+}
