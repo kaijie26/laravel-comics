@@ -1,0 +1,55 @@
+.header-top{
+    background-color: $primary_color;
+
+    .header-top-wrapper{
+        display: flex;
+        justify-content: end;
+        color: $secondary_color;
+        
+        div{
+            padding-left: 2rem;
+            font-size: 13px;
+        }
+    }
+    
+}
+
+.header-bottom{
+    padding: 20px 0;
+    .header-bottom-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            width: 70px;
+        }
+    
+        .menu{
+            display: flex;
+
+            li{
+                padding-left: 25px;
+                font-size: 13px;
+                
+                a{
+                    color: black;
+                    font-weight: 600;
+
+                    &.current{
+                        color: $primary_color;
+                        border-bottom: 5px solid $primary_color;
+                    }
+                }
+
+            }
+        }
+
+        input{
+            border: none;
+            border-bottom: 3px solid $primary_color;
+            text-align: end;
+            width: 10%;
+        }
+    }
+}
