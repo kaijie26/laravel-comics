@@ -10,6 +10,8 @@
 @section('main_content')
 
     @include('partials.jumbotron')
+    @include('components.series-list')
+
      
 @endsection
 
