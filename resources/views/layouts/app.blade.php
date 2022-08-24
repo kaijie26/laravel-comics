@@ -11,17 +11,15 @@
 </head>
 <body>
 
-    <header>
-        @yield('header_content')
-    </header>
+
+    @yield('header_content')
 
     <main>
         @yield('main_content')
     </main>
 
-    <footer>
-        @yield('footer_content')
-    </footer>
+    
+    @yield('footer_content')
     
 </body>
 </html>

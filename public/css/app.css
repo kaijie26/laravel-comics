@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;
-
-700&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -31,13 +29,11 @@ a {
 .header-top {
   background-color: #0282f9;
 }
-
 .header-top .header-top-wrapper {
   display: flex;
   justify-content: end;
   color: #fff;
 }
-
 .header-top .header-top-wrapper div {
   padding-left: 2rem;
   font-size: 13px;
@@ -46,36 +42,29 @@ a {
 .header-bottom {
   padding: 20px 0;
 }
-
 .header-bottom .header-bottom-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .header-bottom .header-bottom-wrapper .logo {
   width: 70px;
 }
-
 .header-bottom .header-bottom-wrapper .menu {
   display: flex;
 }
-
 .header-bottom .header-bottom-wrapper .menu li {
   padding-left: 25px;
   font-size: 13px;
 }
-
 .header-bottom .header-bottom-wrapper .menu li a {
   color: black;
   font-weight: 600;
 }
-
 .header-bottom .header-bottom-wrapper .menu li a.current {
   color: #0282f9;
   border-bottom: 5px solid #0282f9;
 }
-
 .header-bottom .header-bottom-wrapper input {
   border: none;
   border-bottom: 3px solid #0282f9;
@@ -83,3 +72,9 @@ a {
   width: 10%;
 }
 
+.jumbotron {
+  background-image: url("../img/jumbotron.jpg");
+  padding: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

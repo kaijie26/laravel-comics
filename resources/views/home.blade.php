@@ -8,8 +8,9 @@
 
 
 @section('main_content')
-    
-    
+
+    @include('partials.jumbotron')
+     
 @endsection
 
 
