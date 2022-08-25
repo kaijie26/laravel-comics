@@ -15,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $series_array = [];
-    $series_array[] = config('comics');
+    $series_array = config('comics');
 
     $data = [
         'dc_array' => $series_array,

@@ -26,6 +26,11 @@ a {
   margin: 0 auto;
 }
 
+.serie-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .header-top {
   background-color: #0282f9;
 }
@@ -135,4 +140,59 @@ a {
   padding-right: 40px;
   color: #fff;
   font-size: 13px;
+}
+
+.poster-area {
+  background-color: #0282f9;
+  padding: 30px;
+}
+
+.serie-content {
+  padding: 50px 0;
+}
+.serie-content .serie-content-wrapper {
+  display: flex;
+}
+.serie-content .serie-content-wrapper .avaible-bar {
+  width: 95%;
+  background-color: #55ba59;
+}
+.serie-content .serie-content-wrapper .avaible-bar .bar-container {
+  display: flex;
+  justify-content: space-between;
+}
+.serie-content .serie-content-wrapper .avaible-bar .bar-container div {
+  padding: 10px 0;
+}
+.serie-content .serie-content-wrapper .avaible-bar .bar-container :first-child {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+.serie-content .serie-content-wrapper .avaible-bar .bar-container :nth-child(2) {
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+.serie-content .serie-content-wrapper .avaible-bar .bar-container :last-child {
+  padding: 10px 20px;
+}
+.serie-content .serie-content-wrapper .advertisement {
+  width: 500px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.more-info {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  border-top: 3px solid #e7e7e7;
+}
+.more-info .info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.more-info .info-wrapper .info-container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #e7e7e7;
+  border-bottom: 2px solid #e7e7e7;
 }

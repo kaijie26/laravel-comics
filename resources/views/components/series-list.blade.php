@@ -2,17 +2,14 @@
     <div class="container">
         {{-- Wrapper --}}
         <div class="series-card-wrapper">
-            @foreach ($dc_array as $series_array)
-                
-                @foreach ($series_array as $single_serie)
-                    {{-- Single-Card --}}
-                    <div class="card">
-                        <img src="{{ $single_serie['thumb'] }}" alt="{{ $single_serie['series'] }}">
-                        <h3>{{ $single_serie['series'] }}</h3>
+            @foreach ($dc_array as $serie)
+            
+                {{-- Single-Card --}}
+                <div class="card">
+                    <img src="{{ $serie['thumb'] }}" alt="{{ $serie['series'] }}">
+                    <h3>{{ $serie['series'] }}</h3>
 
-                    </div>
-                    
-                @endforeach
+                </div>
 
             @endforeach
             
