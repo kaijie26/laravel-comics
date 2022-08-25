@@ -1,43 +1,52 @@
 <section>
+    {{-- Poster-Area --}}
     <div class="poster-area">
-        <div class="container">
-            ciao
-
+        <div class="serie-container">
+            {{-- Poster --}}
+            <div class="poster">
+                <img src="{{ $current_serie['thumb'] }}" alt="">
+    
+            </div>
+    
         </div>
-    
+
     </div>
-    
+
+    {{-- Serie-Content --}}
     <div class="serie-content">
         <div class="serie-container">
+            {{-- Wrapper --}}
             <div class="serie-content-wrapper">
+                {{-- Serie-General-Description --}}
                 <div class="serie-description">
-                    <h1>title</h1>
-
+                    <h1>{{ $current_serie['title'] }}</h1>
+                    {{-- Avaible-Bar --}}
                     <div class="avaible-bar">
                         <div class="bar-container">
                             <div>
-                                ciao
+                                U.S. Price: {{ $current_serie['price'] }}
                             </div>
     
                             <div>
-                                ciao
+                                AVAIBLE
 
                             </div>
 
                             <div>
-                                ciao
+                                Check Availability
                             </div>
 
                         </div>
 
 
                     </div>
-
+                    {{-- Serie-Description-Text   --}}
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ab deleniti eveniet expedita eligendi aspernatur fugiat numquam eius cumque saepe tenetur atque ratione, sed error? Debitis ipsam aut sunt fugit?
+                        {{ $current_serie['description'] }}
                     </p>
                 </div>
 
+                {{-- Advertisement --}}
                 <div class="advertisement">
                     <div>
                         advertisement
@@ -53,10 +62,12 @@
     
     </div>
 
+    {{-- More-Info-Abot-Serie  --}}
     <div class="more-info">
         <div class="serie-container">
-
+            {{-- Wrapper --}}
             <div class="info-wrapper">
+                {{-- Left-Col-Description --}}
                 <div class="left-col">
                     <h2>Talent</h2>
 
@@ -64,10 +75,13 @@
                         <div>
                             Art by:
                         </div>
-        
-                        <div>
-                            ciao
-                        </div>
+
+                        @foreach($current_serie['artists'] as $artist)
+                            <div class="color-blue" >
+                                {{ $artist }}
+                            </div>
+                        
+                        @endforeach
                             
                     </div>
 
@@ -75,15 +89,18 @@
                         <div>
                             Written by:
                         </div>
-            
-                        <div>
-                            ciao
-                        </div>
+
+                        @foreach($current_serie['writers'] as $writer)
+                            <div class="color-blue">
+                                {{ $writer }}
+                            </div>
+                    
+                        @endforeach
 
                     </div>
                     
                 </div>
-    
+                {{-- RIght-Col-Description --}}
                 <div class="right-col">
                     <h2>Specs</h2>
 
@@ -92,8 +109,8 @@
                             Series:
                         </div>
         
-                        <div>
-                            ciao
+                        <div class="color-blue" >
+                            {{ $current_serie['series'] }}
                         </div>
                             
                     </div>
@@ -104,7 +121,7 @@
                         </div>
             
                         <div>
-                            ciao
+                            {{ $current_serie['price'] }}
                         </div>
 
                     </div>
@@ -115,7 +132,7 @@
                         </div>
             
                         <div>
-                            ciao
+                            {{ $current_serie['sale_date'] }}
                         </div>
 
                     </div>

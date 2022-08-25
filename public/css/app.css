@@ -144,7 +144,13 @@ a {
 
 .poster-area {
   background-color: #0282f9;
-  padding: 30px;
+  padding: 25px 0;
+  position: relative;
+}
+.poster-area .poster {
+  width: 150px;
+  position: absolute;
+  bottom: 50%;
 }
 
 .serie-content {
@@ -190,9 +196,18 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.more-info .info-wrapper .left-col {
+  width: 50%;
+}
 .more-info .info-wrapper .info-container {
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px solid #e7e7e7;
-  border-bottom: 2px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px 0;
+}
+.more-info .info-wrapper .info-container div {
+  display: inline-block;
+}
+
+.color-blue {
+  color: #0282f9;
 }
