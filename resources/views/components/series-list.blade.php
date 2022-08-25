@@ -5,11 +5,11 @@
             @foreach ($dc_array as $serie)
             
                 {{-- Single-Card --}}
-                <div class="card">
+                <a href="{{ route('single-serie', ['id' => $serie['id']]) }}" class="card">
                     <img src="{{ $serie['thumb'] }}" alt="{{ $serie['series'] }}">
                     <h3>{{ $serie['series'] }}</h3>
 
-                </div>
+                </a>
 
             @endforeach
             

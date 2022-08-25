@@ -19,10 +19,10 @@
             {{-- Wrapper --}}
             <div class="header-bottom-wrapper">
                 {{-- Logo --}}
-                <div class="logo">
+                <a href="{{ route('homepage') }}" class="logo">
                     <img src="{{ asset('img/dc-logo.png') }}" alt="">
     
-                </div>
+                </a>
 
                 {{-- Menu --}}
                 <ul class="menu">
