@@ -23,4 +23,24 @@ Route::get('/', function () {
     ];
 
     return view('home' , $data );
-});
+})->name('homepage');
+
+
+Route::get('/serie/{id}', function ($id) {
+    $series_array = config('comics');
+    $current_serie = [];
+
+    foreach($series_array as $single_serie){
+        if($single_serie['id'] == $id) {
+            $current_serie = $single_serie;
+        }
+
+    };
+
+    $data = [
+        'current_serie' => $current_serie
+    ];
+
+
+    return view('single-serie', $data);
+})->name('single-serie');
